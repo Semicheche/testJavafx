@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefHeight="451.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.univel.PrincipalController">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="92.0" minWidth="10.0" prefWidth="47.0" />
+      <ColumnConstraints maxWidth="157.0" />
+   </columnConstraints>
+   <children>
+      <Label prefHeight="9.0" prefWidth="105.0" text="Codigo" />
+      <Label text="Nome" GridPane.rowIndex="1" />
+      <TextField fx:id="txfCodigo" prefHeight="25.0" prefWidth="266.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+      <TextField fx:id="txfNome" prefHeight="25.0" prefWidth="272.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="84.0" text="Salvar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+      <ScrollPane prefHeight="187.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+         <content>
+            <TableView prefHeight="200.0" prefWidth="151.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>
